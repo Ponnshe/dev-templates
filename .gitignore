@@ -1,0 +1,12 @@
+# Ignorar lockfiles para asegurar que cada proyecto generado cree el suyo propio
+**/flake.lock
+
+# Caches y entornos locales
+.direnv/
+.venv/
+result
+result-*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
