@@ -28,12 +28,12 @@ Puedes inicializar cualquier plantilla ejecutando:
 ```bash
 # En un proyecto nuevo:
 mkdir mi-proyecto && cd mi-proyecto
-nix flake init -t github:ponnshe/dev-templates#<plantilla>
+nix flake init -t github:Ponnshe/dev-templates#<plantilla>
 direnv allow
 
 # En un proyecto ya existente:
 cd /ruta/a/mi-proyecto-existente
-nix flake init -t github:ponnshe/dev-templates#<plantilla>
+nix flake init -t github:Ponnshe/dev-templates#<plantilla>
 direnv allow
 ```
 
@@ -46,7 +46,7 @@ direnv allow
 Para no escribir la URL completa de GitHub cada vez, puedes registrar un alias local:
 
 ```bash
-nix registry add templates github:ponnshe/dev-templates
+nix registry add templates github:Ponnshe/dev-templates
 ```
 
 O declarativamente en tu `configuration.nix` de NixOS:
@@ -54,7 +54,7 @@ O declarativamente en tu `configuration.nix` de NixOS:
 ```nix
 nix.registry.templates.to = {
   type = "github";
-  owner = "ponnshe";
+  owner = "Ponnshe";
   repo = "dev-templates";
 };
 ```

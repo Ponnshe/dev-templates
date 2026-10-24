@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    dev-templates.url = "github:ponnshe/dev-templates";
+    dev-templates.url = "github:Ponnshe/dev-templates";
   };
 
   outputs = { self, nixpkgs, flake-utils, dev-templates, ... }:
